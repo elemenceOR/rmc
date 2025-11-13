@@ -2,6 +2,8 @@
 
 A small GUI utility for computing 4x4 translation, rotation and transformation matrices.
 
+<img width="619" height="509" alt="Screenshot from 2025-11-13 00-58-27" src="https://github.com/user-attachments/assets/67491640-43e5-448b-b027-0d313ea3c4d9" />
+
 This repository contains a simple Tkinter-based app (`gui.py`) that helps build 4x4 transformation matrices from translation (x, y, z) and Euler rotations (degrees around X, Y, Z). It shows the translation matrix, rotation matrices (X, Y, Z), the combined transformation matrix, and its inverse (if invertible).
 
 ## Prerequisites
@@ -23,12 +25,6 @@ sudo apt-get install python3-tk
 
 ## Usage
 
-Run the GUI:
-
-```bash
-python3 gui.py
-```
-
 - Enter translation values (x, y, z) and rotation angles (degrees) for X, Y, Z.
 - Click `Compute` to calculate and display the matrices.
 - Click `Copy to Clipboard` to copy the last output shown in the text area.
@@ -43,5 +39,3 @@ python3 gui.py
 
 - The GUI uses `tkinter` and `ttk` for the interface and `numpy` for matrix math.
 - If the transformation matrix is singular (non-invertible), the inverse will be reported as unavailable.
-
-If you'd like, I can add a quick `requirements.txt`, a basic license, or CI to run linting/tests. 
